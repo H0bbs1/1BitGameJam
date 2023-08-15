@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
 
     bool IsGrounded()
     {
-        return Physics2D.OverlapCapsule(groundCheck.position, new Vector2(0.53f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
+        return Physics2D.OverlapCapsule(groundCheck.position, new Vector2(0.53f, 0.045f), CapsuleDirection2D.Horizontal, 0, groundLayer);
     }
 
     void OnMove(InputValue value)
