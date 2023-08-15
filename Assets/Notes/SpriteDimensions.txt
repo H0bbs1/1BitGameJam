@@ -1,0 +1,5 @@
+SPRITE DIMENSIONS
+
+PLAYER
+Player Run: [710p x 818p] [6:2]
+Player Attack: [1157p x 711p] [4:1]
