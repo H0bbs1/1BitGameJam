@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
 
     bool IsGrounded()
     {
-        return Physics2D.OverlapCapsule(groundCheck.position, new Vector2(0.6f, 0.1f), CapsuleDirection2D.Horizontal, 0, groundLayer);
+        return Physics2D.OverlapCapsule(groundCheck.position, new Vector2(0.53f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
     }
 
     void OnMove(InputValue value)
@@ -117,18 +117,3 @@ public class PlayerController : MonoBehaviour
         jumpMultiplier = newJumpPower;
     }
 }
-
-
-
-//void OnJump(InputValue value)
-//{
-//    if (!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
-//    {
-//        return;
-//    }
-//    if (value.isPressed)
-//    {
-//        rb.velocity += new Vector2(0f, jumpSpeed);
-//        Debug.Log("hi");
-//    }
-//}
