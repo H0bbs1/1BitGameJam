@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,7 +115,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: T_Player_Run_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 818
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665c04ddeca71cf438a034531a51dfed
+      internalID: -168506458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Run_1
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 818
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cb10144fc5ce343bda385981129b8f
+      internalID: -2113817738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Run_2
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 818
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3ac10523b8c4c4f828abdd56251d7e
+      internalID: -1713092822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Run_3
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 818
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272c173c81faaec4eb3420a2ea6e3aeb
+      internalID: -1625774422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Run_4
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 818
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34eb8426d6042b44a1a1c9066134bf4
+      internalID: -341475161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Run_5
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 818
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c25c9e74ca0a04a84f357ef879b612
+      internalID: 1382126740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Run_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838bf1e7254a2c04e955392f781838f9
+      internalID: -1740006549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Run_7
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 0
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b62fb3460221c4aa1b711a6d5bd9be
+      internalID: 1227267144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Run_8
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 0
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea899e9eb89921d469b5f8a9905e276e
+      internalID: 858206058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Run_9
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 0
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65043ceef578e2b48bb5e14411d9d3ca
+      internalID: 1839845152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Run_10
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 0
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6961eeab8b8951d4db66ba5d6c65f696
+      internalID: 207763569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Run_11
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 0
+        width: 710
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1a2fead8785a04e830907d1c7c7805
+      internalID: -1450734334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +378,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      T_Player_Run_0: -168506458
+      T_Player_Run_3: -1625774422
+      T_Player_Run_2: -1713092822
+      T_Player_Run_1: -2113817738
+      T_Player_Run_11: -1450734334
+      T_Player_Run_4: -341475161
+      T_Player_Run_6: -1740006549
+      T_Player_Run_7: 1227267144
+      T_Player_Run_10: 207763569
+      T_Player_Run_9: 1839845152
+      T_Player_Run_8: 858206058
+      T_Player_Run_5: 1382126740
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

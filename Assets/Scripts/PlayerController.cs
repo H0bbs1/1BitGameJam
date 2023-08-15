@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     // Components
     private Rigidbody2D rb;
+    private Animator myAnimator;
 
     // Movement System
     private Vector2 moveInput;
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponentInChildren<Animator>();
     }
 
     private void Start()
@@ -94,6 +96,9 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
         rb.velocity = playerVelocity;
+
+        bool isMovingHorizontally = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
+        myAnimator.SetBool("IsRunning", isMovingHorizontally);
     }
 
     private void FlipSprite()
