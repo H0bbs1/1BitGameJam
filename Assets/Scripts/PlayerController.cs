@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            myAnimator.SetBool("IsJumping", true);
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             isJumping = true;
             jumpCounter = 0;
@@ -66,6 +67,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetButtonUp("Jump"))
         {
+            myAnimator.SetBool("IsJumping", false);
             isJumping = false;
             jumpCounter = 0;
 
