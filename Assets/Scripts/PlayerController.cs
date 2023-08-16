@@ -110,6 +110,7 @@ public class PlayerController : MonoBehaviour
 
         bool isMovingHorizontally = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
         myAnimator.SetBool("IsRunning", isMovingHorizontally);
+        myAnimator.SetFloat("moveX", playerVelocity.x);
     }
 
     private void FlipSprite()
