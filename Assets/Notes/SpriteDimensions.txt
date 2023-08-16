@@ -3,3 +3,11 @@ SPRITE DIMENSIONS
 PLAYER
 Player Run: [710p x 818p] [6:2]
 Player Attack: [1157p x 711p] [4:1]
+Player Jump: [818p x 917p] [3:1]
+Player Idle: [185p x 850] [5:3]
+
+BIG ENEMY
+Big Enemy Run: [1536p x 1536p] [6:2]
+
+SMALL ENEMY
+Small Enemy Run: [1306p x 905p] [6:2]
