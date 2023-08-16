@@ -92,6 +92,15 @@ public class PlayerController : MonoBehaviour
         moveInput = value.Get<Vector2>();
     }
 
+    void OnAttack(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            Debug.Log("Attack");
+            myAnimator.SetTrigger("Attack");
+        }
+    }
+
     private void Move()
     {
         Vector2 playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
