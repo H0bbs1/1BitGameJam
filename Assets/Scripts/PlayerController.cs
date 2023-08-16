@@ -97,6 +97,7 @@ public class PlayerController : MonoBehaviour
         if (value.isPressed)
         {
             Debug.Log("Attack");
+            myAnimator.SetTrigger("Attack");
         }
     }
 
