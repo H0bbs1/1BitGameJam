@@ -278,7 +278,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849677263}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &372378981
 BoxCollider2D:
@@ -539,9 +539,9 @@ Transform:
   - {fileID: 1968822887}
   - {fileID: 1156175023}
   - {fileID: 1087249968}
+  - {fileID: 372378980}
   - {fileID: 1662718820}
   - {fileID: 1802118418}
-  - {fileID: 372378980}
   - {fileID: 486272766}
   - {fileID: 754751078}
   m_Father: {fileID: 0}
@@ -683,6 +683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1153899713}
   - component: {fileID: 1153899714}
+  - component: {fileID: 1153899715}
   m_Layer: 0
   m_Name: T_Player_Idle
   m_TagString: Untagged
@@ -757,6 +758,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1153899715
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153899712}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 51bdbef5de47fdb4b892e92677af87dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1156175022
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +924,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849677263}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1662718821
 BoxCollider2D:
@@ -1045,7 +1066,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849677263}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1802118419
 BoxCollider2D:
