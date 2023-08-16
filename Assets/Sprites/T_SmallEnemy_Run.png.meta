@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,7 +115,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 905
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9edc645a55e684b8c47cf33a4090b6
+      internalID: 1603948531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_1
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 905
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab538a1079274584c80832fdfe57cb39
+      internalID: -92578906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_2
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 905
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5782ae5c896434883379a792a6c4db
+      internalID: -1718292709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_3
+      rect:
+        serializedVersion: 2
+        x: 3918
+        y: 905
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc113766e003164e8ff152678dee88b
+      internalID: 1243295127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_4
+      rect:
+        serializedVersion: 2
+        x: 5224
+        y: 905
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c0374682b5ca54ca15ff908f8c450e
+      internalID: -1927915580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_5
+      rect:
+        serializedVersion: 2
+        x: 6530
+        y: 905
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ecdb34d6876a747b5a9ae0478266ac
+      internalID: -263142697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c44f969b695e1499574b50b8c41def
+      internalID: -940029119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_7
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 0
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f138c432030ac8f47a635febf0252a69
+      internalID: 1392161903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_8
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 0
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c31bf697527524182295ba1991027a
+      internalID: 1513179677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_9
+      rect:
+        serializedVersion: 2
+        x: 3918
+        y: 0
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9195c69ed43f06742a23f0c349fcc038
+      internalID: -129514154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_10
+      rect:
+        serializedVersion: 2
+        x: 5224
+        y: 0
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3913e171222b486469863a8a4f04e315
+      internalID: -482615185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_SmallEnemy_Run_11
+      rect:
+        serializedVersion: 2
+        x: 6530
+        y: 0
+        width: 1306
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d13b837f7b813343bd04e950cc8090f
+      internalID: 709436602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +378,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      T_SmallEnemy_Run_11: 709436602
+      T_SmallEnemy_Run_10: -482615185
+      T_SmallEnemy_Run_7: 1392161903
+      T_SmallEnemy_Run_5: -263142697
+      T_SmallEnemy_Run_6: -940029119
+      T_SmallEnemy_Run_3: 1243295127
+      T_SmallEnemy_Run_1: -92578906
+      T_SmallEnemy_Run_4: -1927915580
+      T_SmallEnemy_Run_8: 1513179677
+      T_SmallEnemy_Run_9: -129514154
+      T_SmallEnemy_Run_0: 1603948531
+      T_SmallEnemy_Run_2: -1718292709
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
