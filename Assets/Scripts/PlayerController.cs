@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpMultiplier = 2.0f;
 
     [SerializeField] private Transform weaponCollider;
+    public ScreenBounds screenBounds;
 
     // Components
     private Rigidbody2D rb;
@@ -114,6 +115,15 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
         rb.velocity = playerVelocity;
+
+        // Screen Wrap
+        if (screenBounds.AmIOutOfBounds(transform.position))
+        {
+            Debug.Log("Current: " + transform.position);
+            Vector2 newPosition = screenBounds.CalculateWrappedPosition(transform.position);
+            Debug.Log(newPosition);
+            transform.position = newPosition;
+        }
 
         bool isMovingHorizontally = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
         myAnimator.SetBool("IsRunning", isMovingHorizontally);
