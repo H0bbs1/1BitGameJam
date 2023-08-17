@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     //Components
     Rigidbody2D rb;
 
-    private Vector2 enemyDir = Vector2.right;
+    private Vector2 enemyDir;
 
     private void Awake()
     {
@@ -20,7 +20,22 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DecideDirection();
         rb.velocity = enemyDir * movementSpeed;
+    }
+
+    private void DecideDirection()
+    {
+        int enemyDirRandom = Random.Range(0, 2);
+        if (enemyDirRandom == 0)
+        {
+            enemyDir = Vector2.right;
+        }
+        else
+        {
+            enemyDir = Vector2.left;
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
