@@ -218,7 +218,7 @@ MonoBehaviour:
   fallMultiplier: 3
   jumpTime: 0.4
   jumpMultiplier: 2
-  weaponCollider: {fileID: 0}
+  weaponCollider: {fileID: 1482920158}
   groundCheck: {fileID: 1958314323}
   groundLayer:
     serializedVersion: 2
@@ -1032,7 +1032,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.6579358, y: -0.07559323}
+  m_Offset: {x: 0.5475291, y: -0.05982089}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1043,7 +1043,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.46175826, y: 0.8704119}
+  m_Size: {x: 0.68257165, y: 1.0842152}
   m_EdgeRadius: 0
 --- !u!114 &1482920160
 MonoBehaviour:
