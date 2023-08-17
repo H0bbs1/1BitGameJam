@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpTime = 0.4f;
     [SerializeField] private float jumpMultiplier = 2.0f;
 
+    [SerializeField] private Transform weaponCollider;
+
     // Components
     private Rigidbody2D rb;
     private Animator myAnimator;
@@ -32,7 +34,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        myAnimator = GetComponentInChildren<Animator>();
+        myAnimator = GetComponent<Animator>();
     }
 
     private void Start()
@@ -98,9 +100,14 @@ public class PlayerController : MonoBehaviour
     {
         if (value.isPressed)
         {
-            Debug.Log("Attack");
             myAnimator.SetTrigger("Attack");
+            weaponCollider.gameObject.SetActive(true);
         }
+    }
+
+    public void DoneAttackingAnimEvent()
+    {
+        weaponCollider.gameObject.SetActive(false);
     }
 
     private void Move()
