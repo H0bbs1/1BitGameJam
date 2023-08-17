@@ -116,6 +116,7 @@ public class PlayerController : MonoBehaviour
         Vector2 playerVelocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
         rb.velocity = playerVelocity;
 
+        // Screen Wrap
         if (screenBounds.AmIOutOfBounds(transform.position))
         {
             Debug.Log("Current: " + transform.position);

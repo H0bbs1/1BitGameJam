@@ -11,10 +11,12 @@ public class Enemy : MonoBehaviour
     Rigidbody2D rb;
 
     private Vector2 enemyDir;
+    private ScreenBounds screenBounds;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        screenBounds = FindObjectOfType<ScreenBounds>();
     }
 
     // Start is called before the first frame update
@@ -22,6 +24,18 @@ public class Enemy : MonoBehaviour
     {
         DecideDirection();
         rb.velocity = enemyDir * movementSpeed;
+    }
+
+    private void FixedUpdate()
+    {
+        // Screen Wrap
+        if (screenBounds.AmIOutOfBounds(transform.position))
+        {
+            Debug.Log("Current: " + transform.position);
+            Vector2 newPosition = screenBounds.CalculateWrappedPosition(transform.position);
+            Debug.Log(newPosition);
+            transform.position = newPosition;
+        }
     }
 
     private void DecideDirection()
