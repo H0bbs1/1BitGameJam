@@ -22,9 +22,7 @@ public class StageController : MonoBehaviour
     [SerializeField] GameObject stage;
 
     private Stage currentStage;
-    private List<Enemy> enemyList;
     private Animator playerAnimator;
-
 
     // Start is called before the first frame update
     void Start()
@@ -50,9 +48,6 @@ public class StageController : MonoBehaviour
         // Switch Player
         playerAnimator.runtimeAnimatorController = normalAnimatorController;
 
-        // Switch Enemies
-        List<Enemy> currentEnemiesList = new List<Enemy>(FindObjectsOfType<Enemy>());
-
         // Switch Stage
         stage.GetComponent<SpriteRenderer>().sprite = normalStage;
         currentStage = Stage.Normal;
@@ -62,8 +57,6 @@ public class StageController : MonoBehaviour
     {
         // Switch Player
         playerAnimator.runtimeAnimatorController = invertedAnimatorController;
-
-        // Switch Enemies
 
         // Switch Stage
         stage.GetComponent<SpriteRenderer>().sprite = invertedStage;
