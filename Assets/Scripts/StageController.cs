@@ -51,6 +51,7 @@ public class StageController : MonoBehaviour
         playerAnimator.runtimeAnimatorController = normalAnimatorController;
 
         // Switch Enemies
+        List<Enemy> currentEnemiesList = new List<Enemy>(FindObjectsOfType<Enemy>());
 
         // Switch Stage
         stage.GetComponent<SpriteRenderer>().sprite = normalStage;
