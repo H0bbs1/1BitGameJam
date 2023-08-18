@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -38,12 +39,14 @@ public class PlayerController : MonoBehaviour
     // Misc
     bool isAlive = true;
     private EnemySpawner enemySpawner;
+    private StageController stageController;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         enemySpawner = FindObjectOfType<EnemySpawner>();
+        stageController = FindObjectOfType<StageController>();
     }
 
     private void Start()
@@ -60,7 +63,16 @@ public class PlayerController : MonoBehaviour
         Move();
         FlipSprite();
         Jump();
+        Switch();
         Die();
+    }
+
+    void Switch()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            stageController.SwitchColors();
+        }
     }
 
     void Jump()
