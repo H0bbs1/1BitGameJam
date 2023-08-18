@@ -47,4 +47,9 @@ public class EnemySpawner : MonoBehaviour
 
         } while (isLooping);
     }
+
+    public void StopSpawner()
+    {
+        StopCoroutine(SpawnEnemies());
+    }
 }
