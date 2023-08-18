@@ -37,11 +37,13 @@ public class PlayerController : MonoBehaviour
 
     // Misc
     bool isAlive = true;
+    private EnemySpawner enemySpawner;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        enemySpawner = FindObjectOfType<EnemySpawner>();
     }
 
     private void Start()
@@ -158,8 +160,11 @@ public class PlayerController : MonoBehaviour
             groundCheck.gameObject.SetActive(false);
             transform.rotation = Quaternion.Euler(0, 0, 90);
 
-            // Turn off all animations
+            // Turn off animation
             myAnimator.SetBool("IsRunning", false);
+
+            // Turn off spawner
+            enemySpawner.StopSpawner();
 
             rb.velocity = deathKick;
         }
