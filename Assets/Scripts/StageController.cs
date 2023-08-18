@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class StageController : MonoBehaviour
@@ -20,6 +21,7 @@ public class StageController : MonoBehaviour
 
     [Header("Misc")]
     [SerializeField] GameObject stage;
+    [SerializeField] TextMeshProUGUI scoreText;
 
     private Stage currentStage;
     private Animator playerAnimator;
@@ -51,6 +53,9 @@ public class StageController : MonoBehaviour
         // Switch Stage
         stage.GetComponent<SpriteRenderer>().sprite = normalStage;
         currentStage = Stage.Normal;
+
+        // Change score font color
+        scoreText.color = Color.black;
     }
 
     private void SwitchIntoInverted()
@@ -61,6 +66,9 @@ public class StageController : MonoBehaviour
         // Switch Stage
         stage.GetComponent<SpriteRenderer>().sprite = invertedStage;
         currentStage = Stage.Inverted;
+
+        // Change score font color
+        scoreText.color = Color.white;
     }
 
     public void SwitchPlayer()
