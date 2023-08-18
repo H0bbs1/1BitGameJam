@@ -8,6 +8,10 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] GameObject bigEnemyPrefab;
     [SerializeField] bool isLooping = true;
 
+    private List<Transform> spawnPoints;
+    private Transform chosenSpawnPoint;
+
+
     // Spawn Patterns
     /*
      * 1 = 1 small enemy
@@ -17,6 +21,11 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
+        spawnPoints = new List<Transform>();
+        foreach (Transform child in transform)
+        {
+            spawnPoints.Add(child);
+        }
         StartCoroutine(SpawnEnemies());
     }
 
@@ -25,17 +34,20 @@ public class EnemySpawner : MonoBehaviour
         do
         {
             int enemyToSpawn = Random.Range(0, 3);
+            int spawningPoint = Random.Range(0, 2);
+
+            chosenSpawnPoint = spawnPoints[spawningPoint];
 
             // Decide enemy to spawn
             if (enemyToSpawn == 0)
             {
-                Instantiate(smallEnemyPrefab, transform.position, Quaternion.identity);
+                Instantiate(smallEnemyPrefab, chosenSpawnPoint.position, Quaternion.identity);
             }
             else if (enemyToSpawn == 1)
             {
                 for (int i = 0; i < 3; i++)
                 {
-                    Instantiate(smallEnemyPrefab, transform.position, Quaternion.identity);
+                    Instantiate(smallEnemyPrefab, chosenSpawnPoint.position, Quaternion.identity);
                     yield return new WaitForSeconds(0.75f);
                 }
             }
