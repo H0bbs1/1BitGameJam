@@ -15,7 +15,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpTime = 0.4f;
     [SerializeField] private float jumpMultiplier = 2.0f;
 
+    [Header("Misc")]
     [SerializeField] private Transform weaponCollider;
+    [SerializeField] private CapsuleCollider2D bodyCollider;
+    [SerializeField] private Vector2 deathKick = new Vector2(0, 20.0f);
     public ScreenBounds screenBounds;
 
     // Components
@@ -32,6 +35,9 @@ public class PlayerController : MonoBehaviour
     bool isJumping;
     float jumpCounter;
 
+    // Misc
+    bool isAlive = true;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -45,9 +51,14 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (!isAlive)
+        {
+            return;
+        }
         Move();
         FlipSprite();
-        Jump();        
+        Jump();
+        Die();
     }
 
     void Jump()
@@ -99,7 +110,7 @@ public class PlayerController : MonoBehaviour
 
     void OnAttack(InputValue value)
     {
-        if (value.isPressed)
+        if (value.isPressed && isAlive)
         {
             myAnimator.SetTrigger("Attack");
             weaponCollider.gameObject.SetActive(true);
@@ -119,9 +130,7 @@ public class PlayerController : MonoBehaviour
         // Screen Wrap
         if (screenBounds.AmIOutOfBounds(transform.position))
         {
-            Debug.Log("Current: " + transform.position);
             Vector2 newPosition = screenBounds.CalculateWrappedPosition(transform.position);
-            Debug.Log(newPosition);
             transform.position = newPosition;
         }
 
@@ -140,14 +149,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Delete these methods
-    public void SetJumpTime(float newJumpTime)
+    void Die()
     {
-        jumpTime = newJumpTime;
-    }
+        if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        {
+            isAlive = false;
+            bodyCollider.enabled = false;
+            groundCheck.gameObject.SetActive(false);
+            transform.rotation = Quaternion.Euler(0, 0, 90);
 
-    public void SetJumpPower(float newJumpPower)
-    {
-        jumpMultiplier = newJumpPower;
+            // Turn off all animations
+            myAnimator.SetBool("IsRunning", false);
+
+            rb.velocity = deathKick;
+        }
     }
 }
