@@ -219,6 +219,7 @@ MonoBehaviour:
   jumpTime: 0.4
   jumpMultiplier: 2
   weaponCollider: {fileID: 1482920158}
+  bodyCollider: {fileID: 212679249}
   screenBounds: {fileID: 1822818729}
   groundCheck: {fileID: 1958314323}
   groundLayer:

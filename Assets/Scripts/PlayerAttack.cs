@@ -9,7 +9,6 @@ public class PlayerAttack : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Enemy>())
         {
-            Debug.Log("HAI");
             Destroy(collision.gameObject);
         }
     }

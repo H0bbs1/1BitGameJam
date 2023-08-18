@@ -31,9 +31,7 @@ public class Enemy : MonoBehaviour
         // Screen Wrap
         if (screenBounds.AmIOutOfBounds(transform.position))
         {
-            Debug.Log("Current: " + transform.position);
             Vector2 newPosition = screenBounds.CalculateWrappedPosition(transform.position);
-            Debug.Log(newPosition);
             transform.position = newPosition;
         }
     }
