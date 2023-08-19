@@ -45,6 +45,11 @@ public class StageController : MonoBehaviour
         }
     }
 
+    public string GetCurrentStage()
+    {
+        return currentStage.ToString();
+    }
+
     private void SwitchIntoNormal()
     {
         // Switch Player
@@ -69,11 +74,6 @@ public class StageController : MonoBehaviour
 
         // Change score font color
         scoreText.color = Color.white;
-    }
-
-    public void SwitchPlayer()
-    {
-        
     }
 
     private void SwitchEnemies()
