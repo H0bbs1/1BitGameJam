@@ -15,8 +15,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpTime = 0.4f;
     [SerializeField] private float jumpMultiplier = 2.0f;
 
-    [Header("Misc")]
+    [Header("Attack System")]
+    [SerializeField] AudioClip attackAudio;
     [SerializeField] private Transform weaponCollider;
+
+    [Header("Misc")]
     [SerializeField] private CapsuleCollider2D bodyCollider;
     [SerializeField] private Vector2 deathKick = new Vector2(0, 20.0f);
     public ScreenBounds screenBounds;
@@ -36,9 +39,11 @@ public class PlayerController : MonoBehaviour
     float jumpCounter;
 
     // Misc
-    bool isAlive = true;
+    public bool isAlive = true;
+    bool isAttacking = false;
     private EnemySpawner enemySpawner;
     private StageController stageController;
+    private AudioSource audioSource;
 
     private void Awake()
     {
@@ -46,6 +51,7 @@ public class PlayerController : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         enemySpawner = FindObjectOfType<EnemySpawner>();
         stageController = FindObjectOfType<StageController>();
+        audioSource = FindObjectOfType<AudioSource>();
     }
 
     private void Start()
@@ -68,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
     void Switch()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && !isAttacking)
         {
             stageController.SwitchColors();
         }
@@ -123,8 +129,10 @@ public class PlayerController : MonoBehaviour
 
     void OnAttack(InputValue value)
     {
-        if (value.isPressed && isAlive)
+        if (value.isPressed && isAlive && !isAttacking)
         {
+            isAttacking = true;
+            AudioSource.PlayClipAtPoint(attackAudio, Camera.main.transform.position, 0.5f);
             myAnimator.SetTrigger("Attack");
             weaponCollider.gameObject.SetActive(true);
         }
@@ -133,6 +141,7 @@ public class PlayerController : MonoBehaviour
     public void DoneAttackingAnimEvent()
     {
         weaponCollider.gameObject.SetActive(false);
+        isAttacking = false;
     }
 
     private void Move()
