@@ -172,17 +172,14 @@ public class PlayerController : MonoBehaviour
         if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) || bodyCollider.IsTouchingLayers(LayerMask.GetMask("Hole")))
         {
             isAlive = false;
-            bodyCollider.enabled = false;
-            groundCheck.gameObject.SetActive(false);
-            transform.rotation = Quaternion.Euler(0, 0, 90);
+            gameObject.layer = LayerMask.NameToLayer("Dead");
 
             // Turn off animation
             myAnimator.SetBool("IsRunning", false);
+            myAnimator.SetTrigger("Die");
 
             // Turn off spawner
             enemySpawner.StopSpawner();
-
-            rb.velocity = deathKick;
         }
     }
 }
