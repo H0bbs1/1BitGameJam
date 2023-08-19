@@ -34,6 +34,12 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine(SpawnEnemies());
     }
 
+    public void SpawnEnemy(GameObject enemy)
+    {
+        int spawningPoint = Random.Range(0, 2);
+        Instantiate(enemy, spawnPoints[spawningPoint].position, Quaternion.identity);
+    }
+
     IEnumerator SpawnEnemies()
     {
         do
@@ -83,6 +89,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void StopSpawner()
     {
+        isLooping = false;
         StopCoroutine(SpawnEnemies());
     }
 }

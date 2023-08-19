@@ -162,9 +162,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void TriggerDie()
+    {
+        Die();
+    }
+
     void Die()
     {
-        if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) || bodyCollider.IsTouchingLayers(LayerMask.GetMask("Hole")))
         {
             isAlive = false;
             bodyCollider.enabled = false;
