@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,7 +115,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1725
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d80c3882df345947880a079e8279a0e
+      internalID: 1408318263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1725
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b594dabe4371cc45a740073c25e2619
+      internalID: -1688141891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_2
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1725
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc453d47f3fade469c9784a15947a22
+      internalID: -805962828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_3
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1725
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5f59e8f93bf5c45b0be41584b2c602
+      internalID: -133530033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_4
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1725
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6b551da35af044b8dcefb13e1aa94d
+      internalID: -1514512919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 865
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956192dbc53f34448b2004eb58282c62
+      internalID: -1387932004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 865
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a421bd55f0b0ee548aaeddad84729c40
+      internalID: 2015893893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_7
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 865
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac54b868cc29c94f8a4d283c728ab81
+      internalID: -837964441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_8
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 865
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6102259b4048e4948970f8c233b89c2f
+      internalID: -1072415375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_9
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 865
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed360eea249079047b725e0ffca2f9be
+      internalID: 1429412072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e2da6d61a3f134f9787156123eedc7
+      internalID: 1995289895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 5
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c32475b331f2f749aeaf465f729019c
+      internalID: -1382340270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_12
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 5
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1efec0f6ec2c240bb9b83aa11e9823
+      internalID: -315824410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_13
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 5
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49a5504af96999498a23291188778b2
+      internalID: 1885762332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Player_Idle_Inverted_v2_14
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 5
+        width: 190
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54186299d7016046a97c4f2aa4a3044
+      internalID: -72434917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +441,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      T_Player_Idle_Inverted_v2_7: -837964441
+      T_Player_Idle_Inverted_v2_13: 1885762332
+      T_Player_Idle_Inverted_v2_1: -1688141891
+      T_Player_Idle_Inverted_v2_3: -133530033
+      T_Player_Idle_Inverted_v2_11: -1382340270
+      T_Player_Idle_Inverted_v2_9: 1429412072
+      T_Player_Idle_Inverted_v2_4: -1514512919
+      T_Player_Idle_Inverted_v2_6: 2015893893
+      T_Player_Idle_Inverted_v2_0: 1408318263
+      T_Player_Idle_Inverted_v2_8: -1072415375
+      T_Player_Idle_Inverted_v2_12: -315824410
+      T_Player_Idle_Inverted_v2_2: -805962828
+      T_Player_Idle_Inverted_v2_5: -1387932004
+      T_Player_Idle_Inverted_v2_14: -72434917
+      T_Player_Idle_Inverted_v2_10: 1995289895
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

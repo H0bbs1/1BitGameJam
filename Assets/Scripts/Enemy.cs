@@ -50,14 +50,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.transform.tag == "Player")
-        {
-            Debug.Log("Hit player");
-        }
-    }
-
     public void SetEnemyDirection(Vector2 dir)
     {
         enemyDir = dir;
