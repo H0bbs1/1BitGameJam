@@ -276,7 +276,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 942963283}
         m_TargetAssemblyTypeName: StartSceneController, Assembly-CSharp
-        m_MethodName: LoadGameSceneOnClick
+        m_MethodName: LoadControlsSceneOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
