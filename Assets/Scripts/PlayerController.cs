@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
     float jumpCounter;
 
     // Misc
-    bool isAlive = true;
+    public bool isAlive = true;
     bool canAttack = true;
     private EnemySpawner enemySpawner;
     private StageController stageController;
