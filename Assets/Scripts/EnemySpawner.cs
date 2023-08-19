@@ -82,7 +82,7 @@ public class EnemySpawner : MonoBehaviour
             {
                 Instantiate(invertedBigEnemyPrefab, chosenSpawnPoint.position, Quaternion.identity);
             }
-            yield return new WaitForSeconds(3.5f);
+            yield return new WaitForSeconds(2f);
 
         } while (isLooping);
     }

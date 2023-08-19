@@ -218,6 +218,7 @@ MonoBehaviour:
   fallMultiplier: 3
   jumpTime: 0.4
   jumpMultiplier: 2
+  attackAudio: {fileID: 8300000, guid: 40ca7e22866e4984abab01035fc5f488, type: 3}
   weaponCollider: {fileID: 1482920158}
   bodyCollider: {fileID: 212679249}
   deathKick: {x: 0, y: 20}
