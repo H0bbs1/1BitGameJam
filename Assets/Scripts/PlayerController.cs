@@ -173,6 +173,7 @@ public class PlayerController : MonoBehaviour
         {
             isAlive = false;
             gameObject.layer = LayerMask.NameToLayer("Dead");
+            rb.velocity = Vector2.zero;
 
             // Turn off animation
             myAnimator.SetBool("IsRunning", false);
