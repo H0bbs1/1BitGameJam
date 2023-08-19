@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 212679252}
   - component: {fileID: 212679251}
   - component: {fileID: 212679254}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1210,7 +1210,7 @@ GameObject:
   - component: {fileID: 1153899713}
   - component: {fileID: 1153899714}
   - component: {fileID: 1153899715}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: T_Player_Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1315,7 +1315,7 @@ GameObject:
   - component: {fileID: 1216753167}
   - component: {fileID: 1216753166}
   - component: {fileID: 1216753168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bottom Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1379,7 +1379,7 @@ GameObject:
   - component: {fileID: 1482920158}
   - component: {fileID: 1482920159}
   - component: {fileID: 1482920160}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Weapon Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1757,7 +1757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1958314323}
   - component: {fileID: 1958314324}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: groundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
