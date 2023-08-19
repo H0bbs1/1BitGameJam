@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
     // Misc
     public bool isAlive = true;
-    bool canAttack = true;
+    bool isAttacking = false;
     private EnemySpawner enemySpawner;
     private StageController stageController;
     private AudioSource audioSource;
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
     void Switch()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && !isAttacking)
         {
             stageController.SwitchColors();
         }
@@ -129,9 +129,9 @@ public class PlayerController : MonoBehaviour
 
     void OnAttack(InputValue value)
     {
-        if (value.isPressed && isAlive && canAttack)
+        if (value.isPressed && isAlive && !isAttacking)
         {
-            canAttack = false;
+            isAttacking = true;
             AudioSource.PlayClipAtPoint(attackAudio, Camera.main.transform.position, 0.5f);
             myAnimator.SetTrigger("Attack");
             weaponCollider.gameObject.SetActive(true);
@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour
     public void DoneAttackingAnimEvent()
     {
         weaponCollider.gameObject.SetActive(false);
-        canAttack = true;
+        isAttacking = false;
     }
 
     private void Move()
