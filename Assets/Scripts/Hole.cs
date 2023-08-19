@@ -12,6 +12,7 @@ public class Hole : MonoBehaviour
         {
             EnemySpawner enemySpawner = FindObjectOfType<EnemySpawner>();
             enemySpawner.SpawnEnemy(collision.gameObject);
+            Destroy(collision.gameObject);
         }
     }
 }
