@@ -6,6 +6,8 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] List<WaveConfigSO> waveConfigs;
     [SerializeField] float timeBetweenWaves = 0f;
+    [SerializeField] float spawnTimeVariance = 0.25f;
+    [SerializeField] float minimumSpawntime = 1.5f;
     [SerializeField] bool isLooping = true;
 
     private List<Transform> spawnPoints;
@@ -54,7 +56,7 @@ public class EnemySpawner : MonoBehaviour
                 Instantiate(currentWave.GetEnemyPrefab(i), chosenSpawnPoint.position, Quaternion.identity, transform);
                 yield return new WaitForSeconds(0.75f);
             }
-            yield return new WaitForSeconds(timeBetweenWaves);
+            yield return new WaitForSeconds(GetRandomSpawnTime());
 
         } while (isLooping);
     }
@@ -63,5 +65,11 @@ public class EnemySpawner : MonoBehaviour
     {
         isLooping = false;
         StopCoroutine(SpawnEnemies());
+    }
+
+    private float GetRandomSpawnTime()
+    {
+        float spawnTime = Random.Range(timeBetweenWaves - spawnTimeVariance, timeBetweenWaves + spawnTimeVariance);
+        return Mathf.Clamp(spawnTime, minimumSpawntime, float.MaxValue);
     }
 }

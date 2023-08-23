@@ -794,10 +794,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660a603253232b94fa129c162ee219ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smallEnemyPrefab: {fileID: 2097598369473904787, guid: 8fe9556aa91891d48b5773255f81027d, type: 3}
-  bigEnemyPrefab: {fileID: 1523226871631658190, guid: 99832afb3903d8f4ca56fb957ae763fd, type: 3}
-  invertedSmallEnemyPrefab: {fileID: 2097598369473904787, guid: 332611716e338b649827cf6071c752fa, type: 3}
-  invertedBigEnemyPrefab: {fileID: 1523226871631658190, guid: e68bf99e4c495d942b1ef50833ee9081, type: 3}
+  waveConfigs:
+  - {fileID: 11400000, guid: 9e5c28f88dcdabe4ebe5220b1e509463, type: 2}
+  - {fileID: 11400000, guid: df5ebc6234adcdb4fb3e6a7a2652d207, type: 2}
+  - {fileID: 11400000, guid: 2657f9917f71aae4fb1e082f697cb509, type: 2}
+  - {fileID: 11400000, guid: 984dce1dce6d35546b9af18986506d03, type: 2}
+  - {fileID: 11400000, guid: 7c4b80a11be34fc4db3705c649c49982, type: 2}
+  - {fileID: 11400000, guid: d2e2b778de0793942b8e61a84edfc01c, type: 2}
+  timeBetweenWaves: 1.25
+  spawnTimeVariance: 0.5
+  minimumSpawntime: 1
   isLooping: 1
 --- !u!4 &588040850
 Transform:
