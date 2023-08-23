@@ -75,10 +75,4 @@ public class StageController : MonoBehaviour
         // Change score font color
         scoreText.color = Color.white;
     }
-
-    private void SwitchEnemies()
-    {
-        List<Enemy> currentEnemies = new List<Enemy>(FindObjectsOfType<Enemy>());
-        Debug.Log(currentEnemies.Count);
-    }
 }
