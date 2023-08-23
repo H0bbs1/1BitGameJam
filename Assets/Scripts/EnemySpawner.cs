@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] GameObject smallEnemyPrefab;
-    [SerializeField] GameObject bigEnemyPrefab;
-    [SerializeField] GameObject invertedSmallEnemyPrefab;
-    [SerializeField] GameObject invertedBigEnemyPrefab;
+    [SerializeField] List<WaveConfigSO> waveConfigs;
+    [SerializeField] float timeBetweenWaves = 0f;
     [SerializeField] bool isLooping = true;
 
     private List<Transform> spawnPoints;
     private Transform chosenSpawnPoint;
+    private WaveConfigSO currentWave;
 
 
     // Spawn Patterns
     /*
-     * 1 = 1 small enemy
-     * 2 = 3 small enemies
-     * 3 = 1 big enemy
-     * 4 = 1 inverted small enemy
-     * 5 = 3 inverted small enemies
-     * 6 = 1 inverted big enemy
+     * 1 small enemy
+     * 3 small enemies
+     * 1 big enemy
+     * 1 inverted small enemy
+     * 3 inverted small enemies
+     * 1 inverted big enemy
      */
 
     private void Start()
@@ -48,41 +47,14 @@ public class EnemySpawner : MonoBehaviour
             int spawningPoint = Random.Range(0, 2);
 
             chosenSpawnPoint = spawnPoints[spawningPoint];
+            currentWave = waveConfigs[enemyToSpawn];
 
-            // Decide enemy to spawn
-            if (enemyToSpawn == 0)
+            for (int i = 0; i < currentWave.GetEnemyCount(); i++)
             {
-                Instantiate(smallEnemyPrefab, chosenSpawnPoint.position, Quaternion.identity);
+                Instantiate(currentWave.GetEnemyPrefab(i), chosenSpawnPoint.position, Quaternion.identity, transform);
+                yield return new WaitForSeconds(0.75f);
             }
-            else if (enemyToSpawn == 1)
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    Instantiate(smallEnemyPrefab, chosenSpawnPoint.position, Quaternion.identity);
-                    yield return new WaitForSeconds(0.75f);
-                }
-            }
-            else if (enemyToSpawn == 2)
-            {
-                Instantiate(bigEnemyPrefab, chosenSpawnPoint.position, Quaternion.identity);
-            }
-            else if (enemyToSpawn == 4)
-            {
-                Instantiate(invertedSmallEnemyPrefab, chosenSpawnPoint.position, Quaternion.identity);
-            }
-            else if (enemyToSpawn == 5)
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    Instantiate(invertedSmallEnemyPrefab, chosenSpawnPoint.position, Quaternion.identity);
-                    yield return new WaitForSeconds(0.75f);
-                }
-            }
-            else
-            {
-                Instantiate(invertedBigEnemyPrefab, chosenSpawnPoint.position, Quaternion.identity);
-            }
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(timeBetweenWaves);
 
         } while (isLooping);
     }
