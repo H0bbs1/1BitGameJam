@@ -43,7 +43,6 @@ public class PlayerController : MonoBehaviour
     bool isAttacking = false;
     private EnemySpawner enemySpawner;
     private StageController stageController;
-    private AudioSource audioSource;
 
     private void Awake()
     {
@@ -51,7 +50,6 @@ public class PlayerController : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         enemySpawner = FindObjectOfType<EnemySpawner>();
         stageController = FindObjectOfType<StageController>();
-        audioSource = FindObjectOfType<AudioSource>();
     }
 
     private void Start()
